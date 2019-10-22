@@ -1,0 +1,26 @@
+{
+  "name": "reprograma-projeto-pratico",
+  "version": "1.0.0",
+  "description": "Projeto Agora Vai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mondroidz/reprograma-projeto-pratico.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mondroidz/reprograma-projeto-pratico/issues"
+  },
+  "homepage": "https://github.com/mondroidz/reprograma-projeto-pratico#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

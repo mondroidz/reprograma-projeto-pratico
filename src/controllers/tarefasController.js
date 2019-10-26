@@ -36,7 +36,43 @@ exports.getColaborador = (req, res) => {
 }  
 
 exports.getIncluirData = (req, res) => {
-    const IncluirTarefa = tarefas.map(tarefas => tarefas.dataInclusao)   
-        console.log(IncluirTarefa)
+    const incluirTarefa = tarefas.map(tarefas => tarefas.dataInclusao) 
+    const finalizarTarefa = tarefas.map(tarefas => tarefas.dataConclusao)        
+        //console.log(incluirTarefa, finalizarTarefa)
+    
+    tarefas.sort(function(a, b) {
+        return new Date(a.dataInclusao) - new Date(b.dataInclusao)
+    })
+    console.log(tarefas)
+}    
+
+exports.getFinal = (req, res) => {
+    const incluirTarefa = tarefas.map(tarefas => tarefas.dataInclusao) 
+    const finalizarTarefa = tarefas.map(tarefas => tarefas.dataConclusao)  
+    
 }
+
+
+
+
+
+        //incluirTarefa.sort() 
+        
+
+
+
+       // function trazerDataInc(item) {}
+        //     const dataDifIncluir = tarefas.dataInclusao
+        // console.log(dataDifIncluir)
+
+        // const splitData = incluirTarefa.split("/")
+        // const diaInclus = splitData[0]
+        // const mesInclus = splitData[1]
+        // const anoInclus = splitData[2]
+        //     const listarInclusao = incluirTarefaCresc(ano, mes, dia)
+
+        //res.status(200).send({ listarInclusao })
+
+            //const incluirTarefaCresc = listarInclusao(anoInclus, mesInclus, diaInclus)
+        
 
